@@ -1,0 +1,26 @@
+<html>  
+<head>  
+<title>Test</title>  
+</head>  
+<script>  
+function blockSelect() {  
+var mylist = document.getElementById("myList");  
+document.getElementById("blockChoose").value = mylist.options[mylist.selectedIndex].text;  
+}  
+</script>  
+  
+<body>  
+<form>  
+<b> Select you favourite tutorial site using dropdown list </b>  
+<select id = "myList" onchange = "blockChoose()" >  
+<option>---Add Something---</option>  
+<option> a </option>  
+<option> b </option>  
+<option> c </option>  
+<option> d </option>  
+</select>  
+<p> Your selected tutorial site is:   
+id = "blockChoose" </p>  
+</form>  
+</body>  
+</html>
