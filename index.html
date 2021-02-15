@@ -3,16 +3,16 @@
 <title>Test</title>  
 </head>  
 <script>  
-function blockSelect() {  
+function addSomething() {  
 var mylist = document.getElementById("myList");  
-document.getElementById("blockChoose").value = mylist.options[mylist.selectedIndex].text;  
+document.getElementById("add").value = mylist.options[mylist.selectedIndex].text;  
 }  
 </script>  
   
 <body>  
 <form>  
-<b> Block picker </b>  
-<select id = "myList" onchange = "blockChoose()" >  
+<b> Add something </b>  
+<select id = "myList" onchange = "add()" >  
 <option>---Add Something---</option>  
 <option> a </option>  
 <option> b </option>  
@@ -20,7 +20,7 @@ document.getElementById("blockChoose").value = mylist.options[mylist.selectedInd
 <option> d </option>  
 </select>  
 <p> you chose:   
-<input type = "text" id = "blockChoose()" size = "20" </p>  
+<input type = "text" id = "add()" size = "20" </p>  
 </form>  
 </body>  
 </html>
